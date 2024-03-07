@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+function countWords(array) {
+  let result = {}; // Initialize result object inside the function to ensure it's fresh on each call
+
+  for (let i = 0; i < array.length; i++) {
+    let word = array[i]; // Current word in the array
+
+    // Check if the word is already a key in the result object
+    if (result[word]) {
+      result[word]++; // Increment the count if the word is already present
+    } else {
+      result[word] = 1; // Set the count to 1 if the word is not present
+    }
+  }
+
+  return result; // Return the result object containing word counts
+}
+
+let array = ['apple', 'apple', 'grape', 'apple'];
+let wordCount = countWords(array); // Call the function with your array
+
+console.log(wordCount); // Log the result to see the word counts
+</script>
+</body>
+</html>

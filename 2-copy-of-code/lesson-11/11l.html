@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      array = [];
+      let result = {
+        min: array[0],
+        max: array[0],
+      };
+
+      minMax(array);
+
+      function minMax(array) {
+        for (i = 0; i < array.length; i++) {
+
+          if (array[i] < result.min) {
+            result.min = array[i];
+          } else if (array[i] > result.max) {
+            result.max = array[i];
+          } else if (array === undefined){
+            console.log('bro add values')
+          }
+        }
+      }
+
+      console.log(result);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="insertChoice('heads')">heads</button>
+    <button onclick="insertChoice('tails')">tails</button>
+    <p></p>
+    <script>
+      function insertChoice(choice) {
+        if (choice === "heads") {
+          document.querySelector("p").innerHTML = "You Chose: Heads";
+        } else {
+          document.querySelector("p").innerHTML = "You Chose: Tails";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+  </head>
+  <body>
+    <script>
+      const product = {
+        name: "basketball",
+        price: 2095,
+      };
+      console.log(product);
+
+      product.price += 500;
+      console.log(product);
+
+      product["delivery-time"] = "3 days";
+      console.log(product);
+
+      const product1 = {
+        name: "basketball",
+        price: 2095,
+      };
+
+      const product2 = {
+        name: "football",
+        price: 2195,
+      };
+
+      function comparePrice(product1, product2) {
+        if (product1 > product2) {
+          console.log("basketball is cheaper");
+          return product1;
+        } else {
+          console.log("football is cheaper");
+          return product2;
+        }
+      }
+
+      comparePrice(product1, product2);
+
+      function isSameProduct(product1, product2) {
+        if (JSON.stringify(product1) === JSON.stringify(product2)) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      isSameProduct(product1, product2);
+
+      let originalString = "Hello World!";
+      let lowerCaseString = originalString.toLowerCase();
+
+      console.log(lowerCaseString); // Output: "hello world!"
+
+      let stringToRepeat = "Hello ";
+      let repeatedString = stringToRepeat.repeat(3);
+
+      console.log(repeatedString); // Output: "Hello Hello Hello "
+    </script>
+  </body>
+</html>

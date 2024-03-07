@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <p>
+      <button
+        onclick="
+        calculation(1);
+      "
+      >
+        1
+      </button>
+
+      <button
+        onclick="
+        calculation(2);
+      "
+      >
+        2
+      </button>
+
+      <button
+        onclick="
+       calculation(3);
+      "
+      >
+        3
+      </button>
+
+      <button
+        onclick="
+        calculation(' + ');
+      "
+      >
+        +
+      </button>
+    </p>
+
+    <p>
+      <button
+        onclick="
+       calculation(4);
+      "
+      >
+        4
+      </button>
+
+      <button
+        onclick="
+        calculation(5);
+      "
+      >
+        5
+      </button>
+
+      <button
+        onclick="
+     calculation(6);
+      "
+      >
+        6
+      </button>
+
+      <button
+        onclick="
+        calculation(' - ');
+      "
+      >
+        -
+      </button>
+    </p>
+
+    <p>
+      <button
+        onclick="
+        calculation(7);
+      "
+      >
+        7
+      </button>
+
+      <button
+        onclick="
+        calculation(8);
+      "
+      >
+        8
+      </button>
+
+      <button
+        onclick="
+        calculation(9);
+      "
+      >
+        9
+      </button>
+
+      <button onclick="
+        calculation(' * ');
+      ">*</button>
+    </p>
+
+    <p>
+      <button
+        onclick="
+       calculation(0);
+      "
+      >
+        0
+      </button>
+
+      <button
+        onclick="
+        calculation(' . ');
+      "
+      >
+        .
+      </button>
+
+      <button onclick="
+        // Note: eval() takes a string and runs it as code.
+        // Avoid using eval() in real world projects since
+        // it can potentially be given harmful code to run.
+        // Only use eval() for learning purposes.
+        totalItems = eval(totalItems);
+        console.log(totalItems);
+      ">=</button>
+
+      <button onclick="
+         calculation(' / ');
+      ">/</button>
+    </p>
+
+    <p>
+      <button onclick="
+        totalItems = 0;
+        console.log(`${totalItems} Cleared.`);
+      ">Clear</button>
+    </p>
+
+      <script>
+        let totalItems = "";
+
+        function calculation(number) {
+          totalItems += number;
+          console.log(totalItems);
+          return "totalItems";
+        }
+      </script>
+    </p>
+  </body>
+</html>

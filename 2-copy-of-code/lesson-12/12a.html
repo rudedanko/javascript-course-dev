@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="changeStartButton()" class="js-start-button">Start</button>
+
+    <button onclick="changeCartButton()" class="js-cart-button">
+      Add to Cart
+    </button>
+
+    <p class="js-message"></p>
+
+    <script>
+       let timeoutId;
+
+      function changeCartButton() {
+        
+
+        document.querySelector(".js-message").innerHTML = "Added";
+
+        clearTimeout(timeoutId);
+
+        timeoutId = setTimeout( () => {
+          document.querySelector(".js-message").innerHTML = "";
+        }, 2000);
+
+      }
+
+      function changeStartButton() {
+        document.querySelector(".js-start-button").innerHTML = "Loading...";
+        setTimeout(() => {
+          document.querySelector(".js-start-button").innerHTML = "Finished";
+        }, 1000);
+      }
+
+      let add = function () {
+        console.log(2 + 3);
+      };
+
+      add();
+      add();
+
+      function runTwice(fun) {
+        fun();
+        fun();
+      }
+
+      runTwice(add);
+    </script>
+  </body>
+</html>

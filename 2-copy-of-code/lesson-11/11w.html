@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const array = ["hello", "goodbye", "hi", "bye", "hi"];
+
+      function findIndex(array, word) {
+        for (i = 0; i < array.length; i++) {
+          if (array[i] === word) {
+            return i;
+          }
+        }
+        return -1;
+      }
+
+      // findIndex(array, 'hi');
+
+      console.log(i);
+
+      function uniqueArray(array) {
+        const result = ["hello"];
+
+        for (i = 0; i < array.length; i++) {
+          let currentWord = array[i];
+
+          if (findIndex(result, currentWord) === -1) {
+            result.push(currentWord);
+          }
+        }
+        return result;
+      }
+    </script>
+  </body>
+</html>

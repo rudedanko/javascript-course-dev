@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge</title>
+</head>
+<body>
+  <script>
+    const hour = 11 
+    const name = 'Mariam';
+
+
+    if(hour >= 6 && hour < 12){
+      console.log(`Good Morning ${name}!`)
+    } else if(hour >= 12 && hour < 17){
+      console.log(`Good Afternoon ${name}!`);
+    }else{
+      console.log(`Good night ${name}!`);
+    }
+
+    // hour >= 6 && hour < 12 ? console.log('Good Morning!') :  console.log('Good Afternoon!');
+
+
+    // const age = '3';
+    // const isHoliday = false;
+    
+    // if(age >= 0 && age <= 6){
+    //   console.log('You get a discount!');
+    // } else if(age >= 65){
+    //   console.log('You get a discount!');
+    // } else {
+    //   console.log('No discounts today.');
+    // }
+
+    // age >= 0 && age <= 6 ? console.log('You get a discount!') : console.log('No discounts today.'); 
+
+    // if(isHoliday === false && age <= 6 || age >= 65 ){
+    //   console.log('You get a discount!');
+    // }else {
+    //   console.log('No discounts today.');
+    // }
+
+    // if(randomNumber < 0.5){
+    //   console.log('heads');
+    //   result = 'heads';
+    // }else {
+    //   console.log('tails');
+    //   result = 'tails';
+    // }
+
+    // if(guess === result){
+    //   alert('you win!');
+    // } else {
+    //   alert('You lose!');
+    // }
+
+    let randomNumber = Math.random();
+    const guess = 'heads';
+
+    result = randomNumber < 0.5 ? 'heads' : 'tails'
+
+    guess===result ? alert('you win!'):alert('you lose!');
+
+  </script>
+</body>
+</html>

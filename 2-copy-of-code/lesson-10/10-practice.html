@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .amazon-button {
+        font-family: arial;
+        background-color: rgb(255, 216, 20);
+        padding: 5px 20px;
+        border-radius: 25px;
+        border: none;
+      }
+
+      .uber-request-button {
+        padding: 10px 20px;
+        border: none;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+      .uber-schedule-button {
+        padding: 10px 25px;
+        background-color: rgb(230, 230, 230);
+        color: black;
+        border: none;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+
+      .gaming-button {
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+
+      .toggled-gaming-button {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="amazon-button">Add to Cart</button>
+    <p>
+      <button class="uber-request-button">Request Now</button>
+      <button class="uber-schedule-button">Schedule for later</button>
+    </p>
+
+    <button onclick="gamingButton()" class="gaming-button">Gaming</button>
+    <script>
+      let button = document.querySelector(".gaming-button");
+
+      function gamingButton() {
+        if (!button.classList.contains("toggled-gaming-button")) {
+          button.classList.add("toggled-gaming-button");
+        } else {
+          button.classList.remove("toggled-gaming-button");
+        }
+      }
+    </script>
+  </body>
+</html>
